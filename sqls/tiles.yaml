@@ -1,0 +1,16 @@
+urlPath: /tiles/:z/:x/:y
+request:
+  - fieldName: z
+    fieldIn: path
+    validators:
+      - integer
+  - fieldName: x
+    fieldIn: path
+    validators:
+      - integer
+  - fieldName: y
+    fieldIn: path
+    validators:
+      - integer
+profiles:
+  - pg

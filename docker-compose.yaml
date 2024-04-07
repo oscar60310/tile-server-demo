@@ -1,0 +1,17 @@
+version: "3.9"
+volumes:
+  tile-serve-demo-data:
+    driver: local
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    ports:
+      - 5432:5432
+    volumes:
+      - tile-serve-demo-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+  maputnik:
+    image: maputnik/editor
+    ports:
+      - 8888:8888

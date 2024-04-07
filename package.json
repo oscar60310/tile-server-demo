@@ -1,0 +1,23 @@
+{
+  "name": "tile-server-demo",
+  "version": "1.0.0",
+  "description": "1. Clone this project   ```bash   git clone xxx   ```",
+  "main": "index.js",
+  "scripts": {
+    "vulcan": "vulcan",
+    "dev": "vulcan start -w",
+    "start": "vulcan start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vulcan-sql/core": "0.3.2",
+    "@vulcan-sql/extension-driver-pg": "^0.3.2",
+    "@vulcan-sql/serve": "0.3.2",
+    "vulcan-mvt-formatter": "^0.0.1"
+  },
+  "devDependencies": {
+    "@vulcan-sql/build": "0.3.2",
+    "@vulcan-sql/cli": "^0.3.2"
+  }
+}
