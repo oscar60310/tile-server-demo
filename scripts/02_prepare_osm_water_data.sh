@@ -14,7 +14,7 @@ fi
 unzip $FILE_PATH -d $FOLDER_NAME
 
 echo "Start import"
-ogr2ogr -f PostgreSQL PG:"dbname='osm' host='127.0.0.1' port='5432' user='postgres' password=''" $FOLDER_NAME/water-polygons-split-3857/water_polygons.shp -lco GEOMETRY_NAME=way -lco SPATIAL_INDEX=NONE -lco EXTRACT_SCHEMA_FROM_LAYER_NAME=YES -nln water -lco FID=osm_id -overwrite
+ogr2ogr -f PostgreSQL PG:"dbname='postgres' host='127.0.0.1' port='5432' user='postgres' password=''" $FOLDER_NAME/water-polygons-split-3857/water_polygons.shp -lco GEOMETRY_NAME=way -lco SPATIAL_INDEX=NONE -lco EXTRACT_SCHEMA_FROM_LAYER_NAME=YES -nln water -lco FID=osm_id -overwrite
 
 # Create index
 psql -p 5432 -h localhost -U postgres -c 'CREATE INDEX water_way ON water USING GIST (way);'
