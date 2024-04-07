@@ -12,6 +12,6 @@ services:
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
   maputnik:
-    image: maputnik/editor
+    image: ghcr.io/maplibre/maputnik:main
     ports:
-      - 8888:8888
+      - 8888:80
