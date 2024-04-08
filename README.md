@@ -1,3 +1,5 @@
+Demo project for the post: https://blog.cptsai.com/2024/04/08/make-your-own-tile-servers
+
 ## Initialization
 
 1. Clone this project
@@ -15,6 +17,7 @@
 1. Download source data of Taiwan. (license: https://www.openstreetmap.org/copyright)
     ```bash
     ./scripts/01_prepare_osm_data.sh
+    ./scripts/02_prepare_osm_water_data.sh
     ```
 
 1. Install dependencies.
