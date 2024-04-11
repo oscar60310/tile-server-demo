@@ -1,4 +1,4 @@
-Demo project for the post: https://blog.cptsai.com/2024/04/08/make-your-own-tile-servers
+Demo project for the post: https://blog.cptsai.com/2024/04/11/make-your-own-tile-servers
 
 ## Initialization
 
